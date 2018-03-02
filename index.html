@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="timer">
+  <head>
+    <title>Time Manager</title>
+  </head>
+
+  <body ng-controller="TimerCtrl as timer">
+    <p>Hello world!</p>
+    <p>3 plus 3 is {{3+3}}</p>
+     <button id="start" ng-click="timer.runTimer()"><span ng-bind="timer.buttonName"></span></button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/TimerCtrl.js"></script>
+  </body>
+
+</html>
