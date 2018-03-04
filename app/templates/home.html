@@ -1,2 +1,9 @@
-<h1>Home Page</h1>
-<h3>{{home.time}}</h3>
+
+
+<div class="container">
+  <h1>Pomodoro Timer</h1>
+  <h3>{{home.time | filterTime}}</h3>
+
+  <button id="work" ng-click="home.runTimer(1500)" ng-hide="!home.break"><span ng-bind="home.workButtonName"></span></button>
+  <button id="break" ng-hide="home.break" ng-click="home.runTimer(300)">BREAK</button>
+</div>

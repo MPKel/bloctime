@@ -1,0 +1,14 @@
+
+.container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  text-align: center;
+}
+
+button {
+  border: 3px solid lightblue;
+  border-radius: 7px;
+  outline: none;
+}
