@@ -3,12 +3,24 @@
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  
   text-align: center;
+  
 }
 
 button {
+  font-size: 15px;
+  box-shadow: 3px 3px 3px gray;
   border: 3px solid lightblue;
   border-radius: 7px;
   outline: none;
+}
+
+#work {
+  background-color: red;
+  color: white;
+}
+
+#break {
+  background-color: green;
+  color: white;
 }
