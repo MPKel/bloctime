@@ -4,6 +4,7 @@
       this.onBreak = false;
       this.workButtonName = "Start A Work Session";
       this.breakButtonName = "Start A Break Session"
+      this.workTally = 0;
       var counting = false;
       var begin;
 
@@ -29,7 +30,14 @@
       this.breakTimer = () => {
         if (counting === false) {
           counting = true;
-          this.time = SESSION.BREAK_SHORT;
+          if(this.workTally >= 4) {
+            this.time = SESSION.BREAK_LONG;
+            this.workTally = 0;
+          }
+          else {
+            this.time = SESSION.BREAK_SHORT;
+          }
+
           begin = $interval(this.countdown, 1000);
           this.workButtonName = "Start A Work Session";
           this.breakButtonName = "Reset Only - No Pausing!";
@@ -49,14 +57,16 @@
         if(this.time <= 0) {
           $interval.cancel(begin);
           counting = false;
-          this.onBreak ? this.onBreak = false : this.onBreak = true;
+          if(this.onBreak != true) {
+            this.onBreak = true;
+            this.workTally++;
+          }
+          else {
+            this.onBreak = false;
+          }
+          // this.onBreak ? this.onBreak = false : this.onBreak = true;
         }
       }
-
-
-
-
-
 
     }
 
