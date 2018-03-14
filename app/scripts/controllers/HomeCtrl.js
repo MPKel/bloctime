@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl($interval, SESSION) {
+    function HomeCtrl($interval, SESSION, SoundPlayer) {
       this.time = 1500;
       this.onBreak = false;
       this.workButtonName = "Start A Work Session";
@@ -55,16 +55,19 @@
       this.countdown = () => {
         this.time--
         if(this.time <= 0) {
+
           $interval.cancel(begin);
           counting = false;
           if(this.onBreak != true) {
+            SoundPlayer.play(0);
             this.onBreak = true;
             this.workTally++;
           }
           else {
             this.onBreak = false;
+            SoundPlayer.play(1);
           }
-          // this.onBreak ? this.onBreak = false : this.onBreak = true;
+
         }
       }
 
@@ -72,5 +75,5 @@
 
     angular
         .module('pomTimer')
-        .controller('HomeCtrl', ['$interval','SESSION', HomeCtrl]);
+        .controller('HomeCtrl', ['$interval','SESSION', 'SoundPlayer', HomeCtrl]);
 })();

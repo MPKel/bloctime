@@ -2,5 +2,5 @@
 (function(){
   angular
     .module('pomTimer')
-    .constant('SESSION', {WORK:1500, BREAK_SHORT:300, BREAK_LONG: 1800})
+    .constant('SESSION', {WORK:7, BREAK_SHORT:3, BREAK_LONG: 5})
 })();

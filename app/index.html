@@ -2,7 +2,7 @@
 <html ng-app="pomTimer">
   <head lang="en">
       <meta charset="UTF-8">
-      <title>Bloc Base Project</title>
+      <title>PomTimer</title>
       <link rel="stylesheet" type="text/css" href="/styles/main.css">
   </head>
   <body >
@@ -36,12 +36,16 @@
         firebase.initializeApp(config);
       </script>
 
+      <!-- Buzz sound library -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.0/buzz.min.js"></script>
+
        <!-- Application Files -->
       <script src="scripts/app.js"></script>
       <script src="scripts/controllers/HomeCtrl.js"></script>
       <script src="/scripts/directives/timeCounter.js"></script>
       <script src="/scripts/filters/filterTime.js"></script>
       <script src="/scripts/constants/SESSION.js"></script>
+      <script src="/scripts/services/SoundPlayer.js"></script>
 
   </body>
 </html>
