@@ -1,8 +1,8 @@
 
 
 <div class="container">
-  <h1>Pomodoro Timer</h1>
-  <h2>{{home.time | filterTime}}</h2>
+  <h1 class="app-name">Pomodoro Timer</h1>
+  <h2 id="clock">{{home.time | filterTime}}</h2>
 
   <button id="work" ng-click="home.workTimer()" ng-hide="home.onBreak"><span ng-bind="home.workButtonName"></span></button>
   <button id="break" ng-hide="!home.onBreak" ng-click="home.breakTimer(5)"><span ng-bind="home.breakButtonName"></span></button>

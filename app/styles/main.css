@@ -1,10 +1,18 @@
 
 .container {
-  width: 50%;
+  width: 25%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 8px;
 
+}
+.app-name {
+  color: red;
+  font-family: 'Cinzel', serif;
+  text-shadow: 1px 1px 3px black;
 }
 
 button {
@@ -15,6 +23,11 @@ button {
   outline: none;
 }
 
+#clock {
+  font-size: 40px;
+  font-family: 'Aldrich', sans-serif;
+  color: white;
+}
 
 #work {
   background-color: red;
@@ -33,11 +46,18 @@ button {
   /* border: 1px solid red; */
 
 }
+
+.task-container h3{
+  font-family: 'Varela Round', sans-serif;
+
+}
+
 .task-input {
-  height: 2em;
+  height: 2.1em;
   width: 60%;
   box-shadow: 2px 2px 2px gray;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  border: 2px solid black;
 }
 .new-task-button {
   height: 2em;
