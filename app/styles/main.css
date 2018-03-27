@@ -46,7 +46,7 @@ button {
   border-radius: 2px;
   background-color: black;
   border: 1px solid red;
-  margin-bottom: 5px;
+  margin: 0 0 5px 8px;
 }
 
 .task-list {
@@ -60,7 +60,7 @@ button {
 }
 
 .task-list:hover {
-  transform: scale(1.45);
+  transform: scale(1.25);
   background-color: gray;
   box-shadow: 6px 6px 6px red;
   color: white;

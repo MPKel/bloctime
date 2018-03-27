@@ -11,7 +11,7 @@
     <ui-view></ui-view>
     <div class="task-container" ng-controller="TaskCtrl as task">
       <h3>Create a new task:</h3>
-      <input type="text" placeholder="Enter a task name"  class="task-input" ng-model="task.taskName" ng-keypress="$event.keyCode == 13 && task.add(task.taskName)">
+      <input type="text" placeholder="Enter a task"  class="task-input" ng-model="task.taskName" ng-keypress="$event.keyCode == 13 && task.add(task.taskName)">
       <button type="button" ng-click="task.add(task.taskName)" class="new-task-button">New task</button>
 
       <div class="task-list" ng-repeat="tasked in task.taskList track by $index">
