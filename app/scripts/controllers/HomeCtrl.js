@@ -75,5 +75,5 @@
 
     angular
         .module('pomTimer')
-        .controller('HomeCtrl', ['$interval','SESSION', 'SoundPlayer', HomeCtrl]);
+        .controller('HomeCtrl', ['$interval','SESSION', 'SoundPlayer', 'Tasks', HomeCtrl]);
 })();

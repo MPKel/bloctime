@@ -15,6 +15,7 @@ button {
   outline: none;
 }
 
+
 #work {
   background-color: red;
   color: white;
@@ -22,6 +23,69 @@ button {
 
 #break {
   background-color: green;
+  color: white;
+}
+
+.task-container{
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid red; */
+
+}
+.task-input {
+  height: 2em;
+  width: 60%;
+  box-shadow: 2px 2px 2px gray;
+  margin-bottom: 5px;
+}
+.new-task-button {
+  height: 2em;
+  width: 35%;
+  color: red;
+  border-radius: 2px;
+  background-color: black;
+  border: 1px solid red;
+  margin-bottom: 5px;
+}
+
+.task-list {
+  /* border: 1px solid gray; */
+  padding: 3px;
+  margin: 5px 0 10px 0;
+  font-family: 'Mina', sans-serif;
+  box-shadow: 2px 2px 2px red;
+  background-color: lightgray;
+
+}
+
+.task-list:hover {
+  transform: scale(1.45);
+  background-color: gray;
+  box-shadow: 6px 6px 6px red;
+  color: white;
+
+}
+
+.list-item {
+  /* display: inline; */
+}
+
+.list-delete {
+
+  padding: 1px 3px 1px 3px;
+  color: red;
+  /* display: inline; */
+  /* float: right; */
+  font-size: 10px;
+  box-shadow: 0 2px 2px black;
+  border: 1px solid red;
+  border-radius: 2px;
+  outline: none;
+  background-color: white;
+}
+.list-delete:hover {
+  background-color: red;
   color: white;
 }
 
