@@ -70,7 +70,6 @@ button {
 }
 
 .task-list {
-  /* border: 1px solid gray; */
   padding: 3px;
   margin: 5px 0 10px 0;
   font-family: 'Mina', sans-serif;
@@ -87,16 +86,11 @@ button {
 
 }
 
-.list-item {
-  /* display: inline; */
-}
 
 .list-delete {
 
   padding: 1px 3px 1px 3px;
   color: red;
-  /* display: inline; */
-  /* float: right; */
   font-size: 10px;
   box-shadow: 0 2px 2px black;
   border: 1px solid red;
@@ -107,19 +101,4 @@ button {
 .list-delete:hover {
   background-color: red;
   color: white;
-}
-
-
-@media screen and (max-width: 600px) {
-  /* .container {
-    background-color: blue;
-  }
-
-  button {
-    font-size: 10px;
-    box-shadow: 1px 1px 1px gray;
-    border: 1px solid yellow;
-    border-radius: 7px;
-    outline: none;
-  } */
 }

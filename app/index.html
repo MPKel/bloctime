@@ -14,10 +14,10 @@
       <input type="text" placeholder="Enter a task"  class="task-input" ng-model="task.taskName" ng-keypress="$event.keyCode == 13 && task.add(task.taskName)">
       <button type="button" ng-click="task.add(task.taskName)" class="new-task-button">New task</button>
 
-      <div class="task-list" ng-repeat="tasked in task.taskList track by $index">
+      <div class="task-list" ng-repeat="tasked in task.taskList | orderBy:tasked.date:true track by $index">
         <div>
-          <div class="list-item">{{$index +1}}: {{tasked.$value}}</div>
-          <button class="list-delete" ng-click="task.delete($index)">CLEAR</button> </div>
+          <div class="list-item">{{$index +1}}: {{tasked.value}}</div>
+          <button class="list-delete" ng-click="task.delete(tasked.$id)">CLEAR</button> </div>
       </div>
 
     </div>

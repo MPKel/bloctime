@@ -6,11 +6,14 @@
     Task.all = tasks;
 
     Task.create = function(newTask) {
-      tasks.$add(newTask);
+      var timestamp = new Date().getTime();
+      tasks.$add({value: newTask, date: timestamp.toString()});
+
     };
 
     Task.remove = function(taskId) {
-      tasks.$remove(tasks[taskId]);
+      var taskDel = tasks.$getRecord(taskId);
+      tasks.$remove(taskDel);
     }
 
 
